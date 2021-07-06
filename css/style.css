@@ -1,0 +1,689 @@
+/*Configurações gerais*/
+@font-face{
+    font-family:"fira-code";
+    src: url('../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf')
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "fira-code";
+}
+
+body,html{
+    height: 100%;
+}
+
+.center{
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+    height: 100%;
+}
+.clear{
+    clear:both;
+}
+body{
+    background-color: #383a59;
+}
+/*--------------------*/
+
+/*estilo header*/
+header.header-port{
+    text-align: center;
+    width: 100%;
+    padding: 10px 2%;
+    background-color: #282a36;
+}
+
+.header-port .title-port h1{
+    color: white;
+}
+
+nav.nav-menu.desktop ul{
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 10px 0;
+}
+nav.nav-menu.desktop li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.nav-menu.desktop  a{
+    text-decoration: none;
+    color: #50fa7b;
+    padding: inherit;
+
+}
+
+
+
+nav.nav-menu.desktop a:hover{
+    transition: 1s;
+    background-color: #50fa7b;
+    border-radius: 5px;
+    color:#282a36;
+    border: none;
+}
+a.active-item {
+  border-bottom:2px solid #50fa7b;
+  color: #50fa7b;
+}
+
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+    float: right;
+    background-image: url('../images/menu.png');
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    
+}
+
+
+.menu-mobile ul{
+    display: none;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    left: 0px;
+    top: 80px;
+    margin-top:20px;
+    background-color: #282a36;
+    text-align: center;
+    
+}
+
+.menu-mobile ul li{
+    border-bottom: 2px solid #50fa7b;
+    padding: 4px 0;
+    transition: 0.4;
+}
+.menu-mobile ul li a{
+    text-decoration: none;
+    color: white;
+    padding: inherit;
+}
+
+.menu-mobile ul li a:hover{
+    color: #50fa7b;
+    transition: 1s;
+}
+
+ul.nav-itens .active-mobile{
+    color:#50fa7b;
+    
+}
+
+/*------------*/
+
+/*Estilo para a section central*/
+section.general-information{
+    padding: 40px 2%;
+    text-align: center;
+}
+ .information{
+     width: 100%;
+     display: inline-block;
+    text-align: center;
+    max-width: 500px;
+    padding: 10px 0;
+    
+}
+
+.style-information{
+    color: white;
+    border-top: 2px solid #bd93f9;
+}
+
+.general-information .center div:first-of-type{
+    border-top: none;
+}
+
+section.general-information  h3{
+    margin-top: 10px;
+    color: #33b5c6;
+}
+
+section.general-information  h2{
+    margin-top: 10px;
+    color: #33b5c6;
+}
+
+/*----------------------------*/
+/*Estilo footer*/
+
+footer.footer{
+    background-color: #282a36;
+    padding: 10px 2%;
+    width: 100%;
+}
+
+.footer .nav-footer{
+    float:left;
+    width: 50%;
+}
+
+.nav-footer ul.nav-itens{
+    list-style-position: inside;
+    list-style-type: none;
+
+}
+
+.nav-footer ul.nav-itens li{
+    padding: 3px;
+}
+
+.nav-footer ul.nav-itens a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-footer ul.nav-itens a:hover{
+    color:#bd93f9;
+    border-bottom: 1px solid  #bd93f9;
+    transition:1s;
+    
+}
+.footer .copyright{
+    float: right;
+    width: 50%;
+    padding-left: 10px;
+    text-align: center;
+}
+.footer .copyright p{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/*Estilo para a página de projetos*/
+section.list-project{
+    width: 100%;
+    text-align: center;
+    padding: 50px 2%;
+}
+.list-project .link-wraper{
+    display: inline-block;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+}
+
+
+
+.link-wraper .link-button{
+    display: inline-block;
+    width: 50%;
+    max-width: 300px;
+    height: 230px;
+    background-color:white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;  
+
+}
+
+.link-button p{
+    margin-top: 40px;
+}
+
+.link-button > a{
+    text-decoration: none;
+    color: black;
+}
+.content-wraper{
+    height: inherit;
+    padding: 30px;
+}
+
+
+/*-------------------------------*/
+/*Estilo para a seção de certificações*/
+section.certifications{
+    width: 100%;
+    padding: 30px 2%;
+    text-align: center;
+}
+.certifications .certification-wraper{
+    padding: 30px;
+}
+.certification-wraper > h2{
+    color: #33b5c6;
+    font-size: 30px;
+}
+.certifications .certification-img{
+    display: inline-block;
+    background-color: white;
+    width: 75%;
+    padding-top: 50%;
+    margin-top: 20px;
+    border: 5px solid #bd93f9;
+    background-position:center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*-----------------------------------*/
+/*Estilo para habilidades*/
+section.skills{
+    width: 100%;
+    text-align: center;
+}
+
+section.skills > .center {
+    padding: 20px 2%;
+}
+
+section.skills h3{
+    color: #33b5c6;
+    margin-top: 10px;
+}
+section.skills > .center div:first-of-type{
+    border-top: none;
+}
+
+section.skills > .center .information ul{
+    list-style-position: inside;
+    list-style-type: none;
+    text-align: justify;
+}
+
+section.skills > .center .information ul li{
+    padding: 10px 0;
+}
+
+.obs{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    color: #e0554a;
+}
+
+
+
+/*-----------------------*/
+/*Estilo das páginas de projeto*/
+.bread-crumbs{
+    width: 100%;
+    background-color:#383a59;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bread-crumbs span{
+ width: 100%;
+ text-align: center;
+ color: white;
+}
+
+.bread-crumbs span:last-of-type{
+  color: #8e5ebc;
+   }
+
+section.projects-list{
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+section.projects-list .lat-menu{
+    background-color: #282a36;
+    width: 23%;
+    height: inherit;
+    min-height: 500px;
+    padding: 10px;
+    position: relative;
+}
+
+.projects-list .lat-menu > h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.active-lat{
+    border-bottom: 2px solid #8e5ebc;
+}
+
+.projects-list .lat-menu ul{
+    list-style-position: inside;
+    list-style-type: none;
+    float: left;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.projects-list .lat-menu ul li{
+    font-size: 15px;
+    margin-top: 8px;
+    padding-left: 5px;
+}
+
+.projects-list .lat-menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.projects-list .lat-menu ul li a:hover{
+    transition: 1s;
+    color: #8e5ebc;
+    text-decoration: none;
+}
+
+.overflow{
+    float: left;
+    width: 10%;
+    max-width: 30px;
+    height: 90%;
+    position: absolute;
+    left: 86%
+}
+.button-bar{
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.button-nav{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    width: 8px;
+    height: 40px;
+    background-color:#a1a1a1;
+    transition: 0.3s;
+    cursor: pointer;
+} 
+.button-nav:hover{
+    background-color: #ccc;
+}
+section.projects-list .project-content{
+    background-color: white;
+    width: 77%;
+    height: inherit;
+    min-height: 500px;
+}
+
+section.projects-list .project-content article{
+ width: 100%;
+ background-color: white;
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 10px 0;
+
+}
+
+section.projects-list .project-content h2{
+  text-align: center;
+  margin-bottom: 40px;  
+}
+
+section.projects-list .project-content h1{
+    text-align: justify;
+    margin-bottom: 10px;   
+}
+
+section.projects-list .project-content p{
+    text-align: justify;
+    width: 100%;
+    list-style: 10px;   
+}
+
+section.projects-list .used-tec{
+      padding: 20px 0;
+}
+
+
+
+  section.projects-list .used-tec span{
+    font-size: 15px;
+    display: inline-block;
+    background-color: #ef7064;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+section.projects-list .util-links{
+    padding: 20px 0;
+}
+
+section.projects-list .util-links a{
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #ef7064;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.multimedia{
+    width: 100%;
+}
+ .multimedia .slider{
+    width: 100%;
+    max-width: 800px;
+    border: 3px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-img-wraper{
+    min-width: 2400px;
+    border: 1px solid black;
+}
+.slider-img{
+    float: left;
+    width: 33.3%;
+    padding-top: 15%;
+}
+.multimedia .nav-bullets{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.nav-bullets span{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #ccc;
+    float: left;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.multimedia .gallery{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto 0px auto;
+}
+
+.multimedia .gallery > .gall-img{
+    width: 33.3%;
+    padding-top: 20%;
+    background-color: black;
+    float: left;
+    border: 2px solid white;
+}
+/*Media queryes*/
+@media screen and (max-width: 1100px){
+ /*Lista de Projetos*/
+    section.projects-list .lat-menu{
+      width: 30%;
+    }
+
+    section.projects-list .project-content{
+        width: 70%;
+        padding: 20px 2%;
+    }
+}
+
+@media screen and (max-width:730px){
+    /*Footer*/
+
+    /*Projetos*/
+    section.list-project{
+     padding: 70px 2%;
+ }
+    .list-project .link-wraper{
+     max-width: none;
+     width: 90%;
+ }
+ 
+ .link-wraper .link-button{
+     width: 100%;
+     max-width: none;
+     height: auto;
+     margin-top: 30px;
+ }
+/*Lista de Projetos*/
+section.projects-list .lat-menu{
+    width: 40%;
+  }
+
+  section.projects-list .project-content{
+      width: 60%;
+      padding: 20px 2%;
+  }
+
+  section.projects-list .used-tec span{
+    margin-top: 10px;
+    }
+
+    section.projects-list .util-links a{
+        margin-top: 10px;
+    }
+}
+
+
+
+ 
+  /*----------------------*/
+
+/*curriculo*/
+
+@media screen and (max-width:640px){
+    header.header-port{
+        text-align: left;
+    }
+    .header-port .title-port{
+        float: left;
+        width: 30%;
+    }
+    .desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+   
+    section.general-information{
+        text-align: left;
+        padding: 80px 2%;
+    }
+
+    .information{
+       text-align: left;
+       max-width: none;   
+   }
+   footer.footer{
+  text-align: center;
+}
+
+   .footer .nav-footer{
+    float:none;
+    display: inline-block;
+    width: 100%;
+}
+
+
+   .footer .copyright{
+      float: none;
+      display: inline-block;
+      width: 90%;
+      max-width: 400px;
+      margin-top: 100px;
+   }
+   .nav-footer ul.nav-itens{
+    display: inline-block;
+
+}
+   .nav-footer ul.nav-itens a{
+    font-size: 20px;
+}
+.nav-footer ul.nav-itens li{
+    padding: 8px;
+    text-align: left;
+}
+   /*-----------------------*/
+ section.skills{
+     text-align: left;
+ }
+
+ section.skills > .center .information ul{
+    text-align: left;
+}
+/*Lista de projetos*/
+section.projects-list{
+    flex-direction: column;
+}
+
+section.projects-list .lat-menu{
+    width: 100%;
+    text-align: center;
+    min-height: 250px;
+    padding: 0;
+}
+section.projects-list .project-content{
+    width: 100%;
+    z-index: 1;
+    } 
+    
+    .projects-list .lat-menu ul{
+        left: 50%;
+        max-width: 300px;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+
+    .overflow{
+        float: left;
+        width: 10%;
+        max-width: 30px;
+        height: 80%;
+        position: absolute;
+        left: 86%
+    }
+}
