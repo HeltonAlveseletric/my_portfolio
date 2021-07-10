@@ -495,11 +495,14 @@ section.projects-list .util-links a{
     max-width: 800px;
     border: 3px solid #ccc;
     position: relative;
-    overflow: hidden;
 }
+.scroll{
+    max-width: 2400px;
+    overflow: hidden;
 
+}
 .slider-img-wraper{
-    min-width: 2400px;
+    width: 100%;
     border: 1px solid black;
 }
 .slider-img{
